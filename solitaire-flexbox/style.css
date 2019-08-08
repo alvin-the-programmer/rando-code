@@ -1,0 +1,72 @@
+body {
+    background-color: green;
+}
+
+.deck {
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+}
+
+
+.invisible {
+    opacity: 0;
+}
+
+.hand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 275px;
+    width: 250px;
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    height: 70px;
+    width: 40px;
+    position: relative;
+    font-family: 'Saira Stencil One';
+}
+
+.value {
+    top: 5px;
+    left: 10px;
+    position: absolute;
+    font-size: 7px;
+}
+
+.upside-down {
+    transform: rotate(180deg);
+    top: 0;
+    left: 0;
+    bottom: 5px;
+    right: 10px;
+    position: absolute;
+}
+
+.suit {
+    text-align: center;
+    top: 30%;
+    position: relative;
+    font-size: 15px;
+}
+
+.middle {
+    transform: translateY(-70px);
+}
+
+.bottom {
+    transform: translateY(-140px);
+}

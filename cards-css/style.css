@@ -1,0 +1,53 @@
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: green;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.black {
+    color: black;
+}
+
+.red {
+    color: red;
+
+}
+
+.hand {
+    position: fixed;
+    bottom: -80px; /* hide most of the card off the page */
+    padding-left: 75px;
+}
+
+.value {
+    top: 10px;
+    left: 10px;
+    position: relative; /* could also make this 'absolute', but then the sibling 'suit' would not respect the value */
+}
+
+.suit {
+    text-align: center; /* the suit "image" is really just a char, so we can center the text as long as it's a block element */
+    position: relative;
+    top: 15px;
+    font-size: 40px;
+}
+
+.card {
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 75px;
+    height: 115px;
+    background-color: white;
+    float: left;
+    margin-left: -20px; /* negative margin will overlap cards */
+    transform: rotate(-15deg);
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-100px) rotate(0deg); /* negative translateY will slide card up */
+    transition: 1s all; /* smooth all changes a card undergoes on hover */
+    z-index: 1; /* must be also positioned to use z-index */
+}
